@@ -2,7 +2,7 @@
 # can perform +,-,*,/ operations with fraction
 # eg. 2/3 + 2/3 => 12/9
 
-from math import gcd
+from math import gcd, floor, ceil
 
 
 class Fraction:
@@ -38,6 +38,15 @@ class Fraction:
         temp_num, temp_dem = self.simplify_frac(temp_num, temp_dem)
         return "{}/{}".format(temp_num, temp_dem)
 
+    def decimal_form(self):
+        print(self.num / self.dem)
+
+    def floor(self):
+        print(floor(self.num / self.dem))
+
+    def ceil(self):
+        print(ceil(self.num / self.dem))
+
     @staticmethod
     def simplify_frac(num_value, dem_value):
         gcd_value = gcd(num_value, dem_value)
@@ -46,7 +55,10 @@ class Fraction:
         return temp_num, temp_dem
 
 
-f = Fraction(4, 2)
-g = Fraction(6, 9)
+f = Fraction(133, 3)
+# g = Fraction(6, 9)
+f.decimal_form()
+f.ceil()
+f.floor()
 # print(g) #simplify original frac in init
-print(f / g)
+# print(f / g)
