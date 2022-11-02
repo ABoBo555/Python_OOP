@@ -1,6 +1,6 @@
 # This file has create a new data fraction and its blueprint
 # can perform +,-,*,/ operations with fraction
-# eg. 2/3 + 2/3 => 12/9
+# eg. 2/3 + 2/3 => 12/9 => 4/3
 
 from math import gcd, floor, ceil
 
@@ -55,10 +55,10 @@ class Fraction:
         return temp_num, temp_dem
 
 
-f = Fraction(133, 3)
+f = Fraction(2, 3)
 # g = Fraction(6, 9)
-f.decimal_form()
-f.ceil()
-f.floor()
+# f.decimal_form()
+# f.ceil()
+# f.floor()
 # print(g) #simplify original frac in init
-# print(f / g)
+print(f + f)
