@@ -18,9 +18,14 @@ Note: can booked multiple seats but make sure that seat numbers are numeric,not-
 price range of seats:
 
 from seat 1 to  15          => 3000mmk
+
      seat 16 to 30          => 4000mmk
+
      ...
+
      seat 90 to 105         => 9000mmk
+
      from 106 and grater    => 12000mmk
+     
 
 To test => Run 'run.exe' file which is in output folder.
