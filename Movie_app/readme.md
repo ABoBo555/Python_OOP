@@ -3,7 +3,8 @@ This is a CLI Movie App built using Python(OOP)
                 |--- Main Page
                 |
                 |
-Home Screen     |
+        Home Screen        
+                |
                 |
                 |--- Admin Portal    
 
